@@ -1,0 +1,67 @@
+ACTIVE VIEWER MAP
+Modern City Block by akselmot
+https://sketchfab.com/3d-models/modern-city-block-c80dba249d9547cbb48d00828d23cfa7
+License listed by Sketchfab: Free Standard
+https://sketchfab.com/licenses
+User supplied GLB on 2026-10-08; original retained in source/modern_city_block.glb.
+Working copy: centimetres converted to metres, centered; material swatch planes removed.
+Textures and authored materials preserved. Not an actual reconstruction of Almaty.
+
+PREVIOUS OSM BLOCKOUT (retained separately)
+
+MAP DATA
+© OpenStreetMap contributors
+https://www.openstreetmap.org/copyright
+Database license: Open Database License (ODbL) 1.0
+https://opendatacommons.org/licenses/odbl/1-0/
+Downloaded 2026-10-08 via the public OSM map API:
+https://www.openstreetmap.org/api/0.6/map?bbox=76.922,43.242,76.933,43.250
+Unmodified source data retained in source/almaty.osm.
+The Blender scenes, GLB and rendered previews derive from these data.
+Keep OpenStreetMap attribution with shared previews and in future game credits.
+Observe ODbL requirements when distributing source or adapted map databases.
+
+IMPORT TOOL
+Blosm 2.7.28, base functionality.
+Vladimir Elistratov and contributors.
+https://github.com/vvoovv/blosm
+https://github.com/vvoovv/blosm/archive/refs/heads/release.zip
+Downloaded 2026-10-08; original archive and full license retained locally.
+GPL-3.0-or-later: source/blosm-release/LICENSE
+No paid assets, Google Maps imagery or paid Blosm Pro features used.
+
+PROCESSING
+Imported in Blender 5.2.2 LTS with Blosm 3Dsimple.
+Added flat display base, simple colors, lights and cameras.
+Converted road curves to meshes for portable GLB export.
+Missing building heights generated approximately by the importer.
+No claim of architectural or survey-grade accuracy.
+
+ENCLOSED VARIANT
+21 additional copies of the source apartment buildings, new ground, access road ring and perimeter fence.
+Working file: blender/modern_city_enclosed.blend. Godot creates static exterior collision shapes.
+The original asset license still applies to duplicated buildings.
+
+SELECTED CHARACTERS (2026-10-08)
+Sources downloaded by the user. Original GLBs preserved; working Blender imports with packed textures.
+License listed for each asset: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+
+teen-boy — theskipper
+https://sketchfab.com/3d-models/teen-boy-fff65cd5b0934eff8e3a281766a52bf5
+
+cartoon Asian  Boy — giyas3dartist
+https://sketchfab.com/3d-models/cartoon-asian-boy-db62a970abc549f58f8be3f53ac96f94
+
+Free Stylized Cartoon Girl Rigged Character — Canino3d
+https://sketchfab.com/3d-models/free-stylized-cartoon-girl-rigged-character-dcaa822909ae4e04ad7eb85bc371a8c4
+
+Free Cartoon Game Man Character (Rigged) — Canino3d
+https://sketchfab.com/3d-models/free-cartoon-game-man-character-rigged-a69c8962f4a14ea89bf623d716a81411
+
+Everyday Jane, Casual modern woman, rigged — XRProfXR
+https://sketchfab.com/3d-models/everyday-jane-casual-modern-woman-rigged-4c32c738e0074637beac26bbe670aca3
+
+RETARGETED WALK ANIMATION
+Walk derived from Everyday Jane by XRProfXR (CC BY 4.0), source linked above.
+Retargeted and baked onto four other selected characters; scale and ground contact adjusted.
+Original character attribution and CC BY 4.0 terms apply to each derivative asset.

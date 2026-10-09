@@ -1,0 +1,14 @@
+{
+  "npc_count": 24,
+  "model_count": 5,
+  "routes": 8,
+  "collision_floor_samples": 513,
+  "simulation_seconds": 480,
+  "observer_yield_and_resume": true,
+  "road_and_parking_excluded": true,
+  "scripts": [
+    "godot/pedestrians.gd",
+    "scripts/build_pedestrian_grid.py",
+    "scripts/build_pedestrian_routes.py"
+  ]
+}

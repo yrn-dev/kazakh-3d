@@ -1,0 +1,11 @@
+* text=auto
+*.sh text eol=lf
+/run text eol=lf
+/run-walk text eol=lf
+*.bat text eol=crlf
+*.gd text eol=lf
+*.py text eol=lf
+*.glb binary
+*.blend binary
+*.png binary
+*.npz binary

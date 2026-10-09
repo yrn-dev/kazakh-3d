@@ -1,0 +1,54 @@
+[
+  {
+    "model": "free_stylized_cartoon_girl_rigged_character_walk",
+    "loop_vertex_error_m": 0.0,
+    "motion_displacement_m": 0.8866805443884216,
+    "sampled_frames": [
+      1,
+      9,
+      17,
+      25,
+      32
+    ],
+    "grounded": true
+  },
+  {
+    "model": "free_cartoon_game_man_character_rigged_walk",
+    "loop_vertex_error_m": 0.0,
+    "motion_displacement_m": 0.9862752853948703,
+    "sampled_frames": [
+      1,
+      9,
+      17,
+      25,
+      32
+    ],
+    "grounded": true
+  },
+  {
+    "model": "cartoon_asian__boy_walk",
+    "loop_vertex_error_m": 0.0,
+    "motion_displacement_m": 0.5533535365664175,
+    "sampled_frames": [
+      1,
+      9,
+      17,
+      25,
+      32
+    ],
+    "grounded": true
+  },
+  {
+    "model": "teen-boy_walk",
+    "loop_vertex_error_m": 0.0,
+    "motion_displacement_m": 0.8048315069818557,
+    "sampled_frames": [
+      1,
+      9,
+      17,
+      25,
+      32
+    ],
+    "grounded": true
+  }
+]

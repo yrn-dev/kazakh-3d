@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+project_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)/godot"
+if [[ -n "${GODOT_BIN:-}" ]]; then
+    engine="$GODOT_BIN"
+elif command -v godot >/dev/null 2>&1; then
+    engine="$(command -v godot)"
+elif command -v godot4 >/dev/null 2>&1; then
+    engine="$(command -v godot4)"
+elif [[ -x "$HOME/.local/bin/godot" ]]; then
+    engine="$HOME/.local/bin/godot"
+else
+    echo 'Install Godot 4.4.1+ or set GODOT_BIN to its executable.' >&2
+    exit 1
+fi
+# A fresh clone has no Godot import cache. Prepare it before running a scene.
+if [[ ! -d "$project_dir/.godot/imported" ]]; then
+    "$engine" --headless --editor --path "$project_dir" --import
+fi
+exec "$engine" --path "$project_dir" "$@"

@@ -1,0 +1,1173 @@
+[
+  {
+    "model": "teen-boy",
+    "bones": 52,
+    "clip": "Walk",
+    "frames": 32,
+    "duration_seconds": 1.0333333333333334,
+    "height_m": 1.68,
+    "owners": {
+      "mixamorig:LeftHandThumb3_014": "LeftHand",
+      "mixamorig:LeftFoot_057": "LeftFoot",
+      "mixamorig:RightHandRing2_049": "RightHand",
+      "mixamorig:LeftHandMiddle1_020": "LeftHand",
+      "mixamorig:RightHandPinky1_051": "RightHand",
+      "mixamorig:LeftHandRing3_026": "LeftHand",
+      "mixamorig:Hips_01": "hips",
+      "mixamorig:LeftHandPinky2_029": "LeftHand",
+      "mixamorig:Head_06": "head",
+      "mixamorig:RightForeArm_034": "RightForeArm",
+      "mixamorig:LeftHandPinky1_028": "LeftHand",
+      "mixamorig:RightHandIndex2_041": "RightHand",
+      "mixamorig:Spine1_03": "spine1",
+      "mixamorig:LeftHandThumb2_013": "LeftHand",
+      "mixamorig:LeftHandIndex3_018": "LeftHand",
+      "mixamorig:RightHandThumb3_038": "RightHand",
+      "mixamorig:RightHandMiddle2_045": "RightHand",
+      "mixamorig:RightLeg_061": "RightLeg",
+      "mixamorig:LeftLeg_056": "LeftLeg",
+      "mixamorig:RightFoot_062": "RightFoot",
+      "mixamorig:RightShoulder_032": "RightShoulder",
+      "mixamorig:RightHandPinky3_053": "RightHand",
+      "mixamorig:RightToeBase_063": "RightToe",
+      "mixamorig:LeftHandIndex1_016": "LeftHand",
+      "mixamorig:Neck_05": "neck",
+      "mixamorig:RightHandRing3_050": "RightHand",
+      "mixamorig:RightHandIndex1_040": "RightHand",
+      "mixamorig:Spine_02": "spine",
+      "mixamorig:LeftHand_011": "LeftHand",
+      "mixamorig:LeftHandIndex2_017": "LeftHand",
+      "mixamorig:RightHandThumb2_037": "RightHand",
+      "mixamorig:LeftHandThumb1_012": "LeftHand",
+      "mixamorig:LeftHandRing2_025": "LeftHand",
+      "mixamorig:LeftForeArm_010": "LeftForeArm",
+      "mixamorig:LeftShoulder_08": "LeftShoulder",
+      "mixamorig:RightUpLeg_060": "RightUpLeg",
+      "mixamorig:RightHandThumb1_036": "RightHand",
+      "mixamorig:RightHandPinky2_052": "RightHand",
+      "mixamorig:LeftHandMiddle2_021": "LeftHand",
+      "mixamorig:Spine2_04": "chest",
+      "mixamorig:LeftUpLeg_055": "LeftUpLeg",
+      "mixamorig:LeftHandRing1_024": "LeftHand",
+      "mixamorig:RightHandMiddle3_046": "RightHand",
+      "mixamorig:LeftToeBase_058": "LeftToe",
+      "mixamorig:LeftHandPinky3_030": "LeftHand",
+      "mixamorig:RightHandMiddle1_044": "RightHand",
+      "mixamorig:LeftHandMiddle3_022": "LeftHand",
+      "mixamorig:RightArm_033": "RightArm",
+      "mixamorig:RightHandIndex3_042": "RightHand",
+      "mixamorig:RightHand_035": "RightHand",
+      "mixamorig:LeftArm_09": "LeftArm",
+      "mixamorig:RightHandRing1_048": "RightHand"
+    },
+    "metrics": [
+      {
+        "frame": 1,
+        "ground_correction": 0.00948155578225851,
+        "height": 1.6982247894629836
+      },
+      {
+        "frame": 2,
+        "ground_correction": 0.008758410811424255,
+        "height": 1.7028080075979233
+      },
+      {
+        "frame": 3,
+        "ground_correction": -0.002511880360543728,
+        "height": 1.6903910422697663
+      },
+      {
+        "frame": 4,
+        "ground_correction": -0.003149880561977625,
+        "height": 1.681554780807346
+      },
+      {
+        "frame": 5,
+        "ground_correction": -0.001929856720380485,
+        "height": 1.6696158872218803
+      },
+      {
+        "frame": 6,
+        "ground_correction": -0.00201645540073514,
+        "height": 1.655194967519492
+      },
+      {
+        "frame": 7,
+        "ground_correction": -0.0016564748948439956,
+        "height": 1.6433241941267624
+      },
+      {
+        "frame": 8,
+        "ground_correction": 0.0020433245226740837,
+        "height": 1.638308602385223
+      },
+      {
+        "frame": 9,
+        "ground_correction": 0.003999721724539995,
+        "height": 1.636933219153434
+      },
+      {
+        "frame": 10,
+        "ground_correction": 0.022345049306750298,
+        "height": 1.6546740364283323
+      },
+      {
+        "frame": 11,
+        "ground_correction": 0.025504812598228455,
+        "height": 1.656931385397911
+      },
+      {
+        "frame": 12,
+        "ground_correction": 0.025309348478913307,
+        "height": 1.6603282932192087
+      },
+      {
+        "frame": 13,
+        "ground_correction": 0.023076096549630165,
+        "height": 1.665050307288766
+      },
+      {
+        "frame": 14,
+        "ground_correction": 0.019618593156337738,
+        "height": 1.672930084168911
+      },
+      {
+        "frame": 15,
+        "ground_correction": 0.015408717095851898,
+        "height": 1.6808921918272972
+      },
+      {
+        "frame": 16,
+        "ground_correction": 0.010675505734980106,
+        "height": 1.6857258835807443
+      },
+      {
+        "frame": 17,
+        "ground_correction": 0.005455461796373129,
+        "height": 1.6883660233579576
+      },
+      {
+        "frame": 18,
+        "ground_correction": 0.0009338053059764206,
+        "height": 1.6869336756062694
+      },
+      {
+        "frame": 19,
+        "ground_correction": -0.0026144995354115963,
+        "height": 1.681138871703297
+      },
+      {
+        "frame": 20,
+        "ground_correction": -0.0055320472456514835,
+        "height": 1.6719573526643217
+      },
+      {
+        "frame": 21,
+        "ground_correction": -0.007671659346669912,
+        "height": 1.6583972522057593
+      },
+      {
+        "frame": 22,
+        "ground_correction": -0.010130566544830799,
+        "height": 1.6432313499972224
+      },
+      {
+        "frame": 23,
+        "ground_correction": -0.011269301176071167,
+        "height": 1.6289277374744415
+      },
+      {
+        "frame": 24,
+        "ground_correction": -0.0015091783134266734,
+        "height": 1.630180370179005
+      },
+      {
+        "frame": 25,
+        "ground_correction": 0.009322365745902061,
+        "height": 1.636702736839652
+      },
+      {
+        "frame": 26,
+        "ground_correction": 0.025038445368409157,
+        "height": 1.6509846094995737
+      },
+      {
+        "frame": 27,
+        "ground_correction": 0.03062003292143345,
+        "height": 1.661926681175828
+      },
+      {
+        "frame": 28,
+        "ground_correction": 0.027930958196520805,
+        "height": 1.66815279237926
+      },
+      {
+        "frame": 29,
+        "ground_correction": 0.023565156385302544,
+        "height": 1.6757128071039915
+      },
+      {
+        "frame": 30,
+        "ground_correction": 0.01857670769095421,
+        "height": 1.684648122638464
+      },
+      {
+        "frame": 31,
+        "ground_correction": 0.013804024085402489,
+        "height": 1.6927189286798239
+      },
+      {
+        "frame": 32,
+        "ground_correction": 0.00948155578225851,
+        "height": 1.6982247894629836
+      }
+    ]
+  },
+  {
+    "model": "cartoon_asian__boy",
+    "bones": 165,
+    "clip": "Walk",
+    "frames": 32,
+    "duration_seconds": 1.0333333333333334,
+    "height_m": 1.25,
+    "owners": {
+      "arm.l_82": "LeftArm",
+      "pinky1.l_330": "LeftHand",
+      "DEF-forehead.L.002_119": "head",
+      "hand.r_419": "RightHand",
+      "c_index2.l_355": "LeftHand",
+      "DEF-lid.T.L.002_155": "head",
+      "DEF_forhead_03.L_301": "head",
+      "thigh.l_23": "LeftUpLeg",
+      "DEF-lid.T.R.003_194": "head",
+      "DEF-brow.B.L.001_125": "head",
+      "DEF-chin.R_203": "head",
+      "thumb1.l_366": "LeftHand",
+      "c_middle1_base.l_351": "LeftHand",
+      "c_middle2.l_346": "LeftHand",
+      "spine_01.x_56": "spine",
+      "DEF-lip.T.R_277": "head",
+      "shoulder.r_69": "RightShoulder",
+      "DEF-cheek.B.L.001_263": "head",
+      "toes_01.l_8": "LeftToe",
+      "DEF-lid.T.L.003_157": "head",
+      "c_index3.l_353": "LeftHand",
+      "c_middle3.l_344": "LeftHand",
+      "DEF-lid.B.L_143": "head",
+      "forearm_stretch.r_324": "RightForeArm",
+      "pinky1.r_378": "RightHand",
+      "DEF-brow.T.R.003_240": "head",
+      "DEF-lid.B.R.003_186": "head",
+      "DEF-nose.L.001_289": "head",
+      "arm_stretch.r_320": "RightArm",
+      "DEF-brow.B.L.003_129": "head",
+      "DEF-brow.T.R.002_238": "head",
+      "arm_stretch.l_319": "LeftArm",
+      "DEF-cheek.B.L_267": "head",
+      "DEF-jaw.L_242": "head",
+      "DEF-lid.T.L_151": "head",
+      "c_pinky2.l_328": "LeftHand",
+      "foot.r_36": "RightFoot",
+      "DEF-brow.B.R_160": "head",
+      "foot.l_10": "LeftFoot",
+      "c_ring3.l_335": "LeftHand",
+      "DEF-nose_246": "head",
+      "DEF-forehead.R_116": "head",
+      "DEF-chin.001_198": "head",
+      "leg_stretch.l_314": "LeftLeg",
+      "head.x_310": "head",
+      "DEF-jaw.R.001_209": "head",
+      "DEF-cheek.T.R.001_296": "head",
+      "DEF-brow.T.R_234": "head",
+      "DEF-lid.B.R.002_184": "head",
+      "leg_stretch.r_316": "RightLeg",
+      "DEF-forehead.L.001_117": "head",
+      "c_thumb2.l_364": "LeftHand",
+      "thigh_stretch.r_318": "RightUpLeg",
+      "DEF-lip.T.L.001_272": "head",
+      "DEF-lid.T.L.001_153": "head",
+      "DEF-cheek.B.R_269": "head",
+      "c_arm_twist_offset.r_75": "RightArm",
+      "leg.l_22": "LeftLeg",
+      "leg_twist.r_315": "RightLeg",
+      "forearm_stretch.l_322": "LeftForeArm",
+      "DEF-brow.T.L.001_227": "head",
+      "root.x_3": "hips",
+      "DEF-brow.B.R.001_162": "head",
+      "DEF-lip.B.L_253": "head",
+      "c_ring1_base.r_390": "RightHand",
+      "DEF-lip.B.L.001_258": "head",
+      "DEF-nose.001_285": "head",
+      "spine_03.x_110": "chest",
+      "DEF-lid.B.R_180": "head",
+      "DEF-brow.T.R.001_236": "head",
+      "DEF_forhead_02.R_304": "head",
+      "DEF-jaw.L.001_207": "head",
+      "c_ring2.r_385": "RightHand",
+      "DEF-lid.T.R.001_190": "head",
+      "DEF-brow.B.R.003_166": "head",
+      "c_index1_base.r_408": "RightHand",
+      "forearm.l_372": "LeftForeArm",
+      "DEF-chin_197": "head",
+      "thigh_twist.r_50": "RightUpLeg",
+      "DEF-lip.T.R.001_274": "head",
+      "DEF_eye.R_177": "head",
+      "DEF-jaw.R_244": "head",
+      "c_arm_twist_offset.l_90": "LeftArm",
+      "middle1.r_396": "RightHand",
+      "DEF-nose.R.001_291": "head",
+      "DEF-nose.004_287": "head",
+      "DEF-nose.002_281": "head",
+      "c_pinky1_base.r_381": "RightHand",
+      "neck.x_62": "neck",
+      "DEF_forhead_02.L_299": "head",
+      "c_pinky2.r_376": "RightHand",
+      "DEF-tongue.002_214": "head",
+      "DEF-nose.R_250": "head",
+      "c_index2.r_402": "RightHand",
+      "c_ring2.l_337": "LeftHand",
+      "thigh.r_49": "RightUpLeg",
+      "DEF-cheek.T.R_233": "head",
+      "DEF-lid.B.L.001_145": "head",
+      "DEF-cheek.T.L.001_294": "head",
+      "DEF-forehead.L_115": "head",
+      "DEF_forhead_01.R_303": "head",
+      "c_middle3.r_392": "RightHand",
+      "DEF-brow.T.L.003_231": "head",
+      "DEF-jaw_205": "head",
+      "index1.l_357": "LeftHand",
+      "thigh_twist.l_24": "LeftUpLeg",
+      "DEF-lid.B.R.001_182": "head",
+      "spine_02.x_57": "spine1",
+      "c_middle2.r_394": "RightHand",
+      "DEF-brow.T.L_225": "head",
+      "ring1.l_339": "LeftHand",
+      "c_thumb3.l_362": "LeftHand",
+      "c_thumb3.r_410": "RightHand",
+      "shoulder.l_86": "LeftShoulder",
+      "DEF-tongue_217": "head",
+      "DEF-chin.L_201": "head",
+      "DEF-brow.B.R.002_164": "head",
+      "DEF-lip.B.R_254": "head",
+      "index1.r_404": "RightHand",
+      "DEF-nose.L_248": "head",
+      "ring1.r_387": "RightHand",
+      "c_thumb2.r_412": "RightHand",
+      "DEF-cheek.T.L_224": "head",
+      "DEF_forhead_04.R_306": "head",
+      "leg.r_48": "RightLeg",
+      "toes_01.r_34": "RightToe",
+      "DEF-lip.B.R.001_260": "head",
+      "arm.r_71": "RightArm",
+      "leg_twist.l_313": "LeftLeg",
+      "DEF-forehead.R.001_118": "head",
+      "DEF-temple.L_121": "head",
+      "DEF_forhead_01.L_300": "head",
+      "DEF-brow.B.L.002_127": "head",
+      "DEF_forhead_03.R_305": "head",
+      "DEF-lid.T.R.002_192": "head",
+      "DEF-temple.R_122": "head",
+      "thumb1.r_414": "RightHand",
+      "c_middle1_base.r_399": "RightHand",
+      "c_pinky3.l_326": "LeftHand",
+      "forearm_twist.l_321": "LeftForeArm",
+      "DEF-lip.T.L_276": "head",
+      "c_pinky3.r_374": "RightHand",
+      "c_pinky1_base.l_333": "LeftHand",
+      "thigh_stretch.l_317": "LeftUpLeg",
+      "forearm.r_420": "RightForeArm",
+      "DEF_eye.L_140": "head",
+      "DEF-cheek.B.R.001_265": "head",
+      "c_index3.r_400": "RightHand",
+      "DEF-forehead.R.002_120": "head",
+      "DEF-tongue.001_211": "head",
+      "middle1.l_348": "LeftHand",
+      "c_ring1_base.l_342": "LeftHand",
+      "DEF-nose.003_282": "head",
+      "DEF-lid.T.R_188": "head",
+      "DEF-teeth.B_221": "head",
+      "DEF-brow.T.L.002_229": "head",
+      "DEF-lid.B.L.002_147": "head",
+      "hand.l_371": "LeftHand",
+      "DEF-teeth.T_307": "head",
+      "c_index1_base.l_360": "LeftHand",
+      "forearm_twist.r_323": "RightForeArm",
+      "DEF-lid.B.L.003_149": "head",
+      "DEF_forhead_04.L_302": "head",
+      "c_ring3.r_383": "RightHand",
+      "DEF-brow.B.L_123": "head"
+    },
+    "metrics": [
+      {
+        "frame": 1,
+        "ground_correction": 0.02835431508719921,
+        "height": 1.286896614357829
+      },
+      {
+        "frame": 2,
+        "ground_correction": 0.028954455628991127,
+        "height": 1.2917919848114252
+      },
+      {
+        "frame": 3,
+        "ground_correction": 0.018991518765687943,
+        "height": 1.281438160687685
+      },
+      {
+        "frame": 4,
+        "ground_correction": 0.01955690234899521,
+        "height": 1.276673100888729
+      },
+      {
+        "frame": 5,
+        "ground_correction": 0.021541643887758255,
+        "height": 1.269746471196413
+      },
+      {
+        "frame": 6,
+        "ground_correction": 0.02234466001391411,
+        "height": 1.2605523578822613
+      },
+      {
+        "frame": 7,
+        "ground_correction": 0.023804206401109695,
+        "height": 1.2534415908157825
+      },
+      {
+        "frame": 8,
+        "ground_correction": 0.027927037328481674,
+        "height": 1.2511957846581936
+      },
+      {
+        "frame": 9,
+        "ground_correction": 0.030909594148397446,
+        "height": 1.2510753236711025
+      },
+      {
+        "frame": 10,
+        "ground_correction": 0.03811167553067207,
+        "height": 1.2570005543529987
+      },
+      {
+        "frame": 11,
+        "ground_correction": 0.040855228900909424,
+        "height": 1.2585504651069641
+      },
+      {
+        "frame": 12,
+        "ground_correction": 0.04038403183221817,
+        "height": 1.2604849115014076
+      },
+      {
+        "frame": 13,
+        "ground_correction": 0.03813144937157631,
+        "height": 1.2633660770952702
+      },
+      {
+        "frame": 14,
+        "ground_correction": 0.03482390195131302,
+        "height": 1.2684471681714058
+      },
+      {
+        "frame": 15,
+        "ground_correction": 0.031046241521835327,
+        "height": 1.2735973298549652
+      },
+      {
+        "frame": 16,
+        "ground_correction": 0.02713960036635399,
+        "height": 1.2764834724366665
+      },
+      {
+        "frame": 17,
+        "ground_correction": 0.023170173168182373,
+        "height": 1.2775582671165466
+      },
+      {
+        "frame": 18,
+        "ground_correction": 0.020051464438438416,
+        "height": 1.2761359065771103
+      },
+      {
+        "frame": 19,
+        "ground_correction": 0.01796591654419899,
+        "height": 1.2721968926489353
+      },
+      {
+        "frame": 20,
+        "ground_correction": 0.016944080591201782,
+        "height": 1.26674023270607
+      },
+      {
+        "frame": 21,
+        "ground_correction": 0.01676749810576439,
+        "height": 1.2586559019982815
+      },
+      {
+        "frame": 22,
+        "ground_correction": 0.01654178649187088,
+        "height": 1.2495898678898811
+      },
+      {
+        "frame": 23,
+        "ground_correction": 0.01823860965669155,
+        "height": 1.241971081122756
+      },
+      {
+        "frame": 24,
+        "ground_correction": 0.02405613288283348,
+        "height": 1.2415980659425259
+      },
+      {
+        "frame": 25,
+        "ground_correction": 0.03112291917204857,
+        "height": 1.2453846894204617
+      },
+      {
+        "frame": 26,
+        "ground_correction": 0.040127143263816833,
+        "height": 1.2532094568014145
+      },
+      {
+        "frame": 27,
+        "ground_correction": 0.044315170496702194,
+        "height": 1.2612359039485455
+      },
+      {
+        "frame": 28,
+        "ground_correction": 0.04176641255617142,
+        "height": 1.2652962282299995
+      },
+      {
+        "frame": 29,
+        "ground_correction": 0.037973325699567795,
+        "height": 1.270325344055891
+      },
+      {
+        "frame": 30,
+        "ground_correction": 0.03370189666748047,
+        "height": 1.276041030883789
+      },
+      {
+        "frame": 31,
+        "ground_correction": 0.029772896319627762,
+        "height": 1.2809864468872547
+      },
+      {
+        "frame": 32,
+        "ground_correction": 0.02835431508719921,
+        "height": 1.286896614357829
+      }
+    ]
+  },
+  {
+    "model": "free_stylized_cartoon_girl_rigged_character",
+    "bones": 170,
+    "clip": "Walk",
+    "frames": 32,
+    "duration_seconds": 1.0333333333333334,
+    "height_m": 1.7,
+    "owners": {
+      "CC_Base_Spine02_035_3": "chest",
+      "CC_Base_L_Mid1_062": "LeftHand",
+      "CC_Base_R_UpperarmTwist01_099": "RightArm",
+      "CC_Base_L_Foot_06_0": "LeftFoot",
+      "CC_Base_R_Clavicle_077_1": "RightShoulder",
+      "CC_Base_L_KneeShareBone_016": "LeftLeg",
+      "CC_Base_R_UpperarmTwist01_099_2": "RightArm",
+      "CC_Base_L_CalfTwist01_014_0": "LeftLeg",
+      "CC_Base_L_Eye_046": "head",
+      "CC_Base_L_Index2_066": "LeftHand",
+      "CC_Base_R_Eye_045": "head",
+      "CC_Base_L_PinkyToe1_09": "LeftToe",
+      "CC_Base_R_Foot_022_0": "RightFoot",
+      "CC_Base_L_Hand_055": "LeftHand",
+      "CC_Base_R_Index2_094": "RightHand",
+      "CC_Base_Waist_033": "spine",
+      "CC_Base_R_Foot_022": "RightFoot",
+      "CC_Base_R_UpperarmTwist01_099_1": "RightArm",
+      "CC_Base_Spine01_034": "spine1",
+      "CC_Base_R_Pinky1_096": "RightHand",
+      "CC_Base_L_RingToe1_010_0": "LeftToe",
+      "CC_Base_R_MidToe1_027_0": "RightToe",
+      "CC_Base_R_Index1_093": "RightHand",
+      "CC_Base_Pelvis_03_1": "hips",
+      "CC_Base_R_BigToe1_024_1": "RightToe",
+      "CC_Base_NeckTwist02_037": "neck",
+      "CC_Base_R_Hand_083": "RightHand",
+      "CC_Base_L_MidToe1_011_1": "LeftToe",
+      "CC_Base_Teeth01_048": "head",
+      "CC_Base_R_Breast_076_1": "chest",
+      "CC_Base_L_Pinky2_057": "LeftHand",
+      "CC_Base_R_UpperarmTwist02_0100": "RightArm",
+      "CC_Base_L_Foot_06": "LeftFoot",
+      "CC_Base_L_RibsTwist_073_0": "chest",
+      "CC_Base_L_Pinky3_058": "LeftHand",
+      "CC_Base_NeckTwist02_037_0": "neck",
+      "CC_Base_R_Ring3_086": "RightHand",
+      "CC_Base_R_Pinky3_098": "RightHand",
+      "CC_Base_Tongue03_043": "head",
+      "CC_Base_L_Thumb2_069": "LeftHand",
+      "CC_Base_NeckTwist01_036_0": "neck",
+      "CC_Base_L_RibsTwist_073_1": "chest",
+      "CC_Base_L_ThighTwist01_017_1": "LeftUpLeg",
+      "CC_Base_L_CalfTwist02_015": "LeftLeg",
+      "CC_Base_FacialBone_039": "head",
+      "CC_Base_R_Mid1_087": "RightHand",
+      "CC_Base_R_Clavicle_077_0": "RightShoulder",
+      "CC_Base_Tongue02_042": "head",
+      "CC_Base_R_Clavicle_077": "RightShoulder",
+      "CC_Base_L_BigToe1_013": "LeftToe",
+      "CC_Base_R_Forearm_079": "RightForeArm",
+      "CC_Base_L_Index1_065": "LeftHand",
+      "CC_Base_R_RibsTwist_075_0": "chest",
+      "CC_Base_L_ThighTwist02_018_1": "LeftUpLeg",
+      "CC_Base_R_Upperarm_078": "RightArm",
+      "CC_Base_R_ToeBase_023": "RightToe",
+      "CC_Base_L_RibsTwist_073": "chest",
+      "CC_Base_L_Forearm_051": "LeftForeArm",
+      "CC_Base_R_MidToe1_027_1": "RightToe",
+      "CC_Base_R_PinkyToe1_00_1": "RightToe",
+      "CC_Base_L_CalfTwist02_015_0": "LeftLeg",
+      "CC_Base_R_ThighTwist01_031_0": "RightUpLeg",
+      "CC_Base_L_Index3_067": "LeftHand",
+      "CC_Base_NeckTwist01_036_2": "neck",
+      "CC_Base_R_Mid3_089": "RightHand",
+      "CC_Base_L_IndexToe1_012_0": "LeftToe",
+      "CC_Base_R_ThighTwist01_031_1": "RightUpLeg",
+      "CC_Base_Spine01_034_1": "spine1",
+      "CC_Base_R_Thumb3_092": "RightHand",
+      "CC_Base_R_Clavicle_077_3": "RightShoulder",
+      "CC_Base_L_IndexToe1_012": "LeftToe",
+      "CC_Base_R_CalfTwist02_030": "RightLeg",
+      "CC_Base_Pelvis_03": "hips",
+      "CC_Base_R_Ring1_084": "RightHand",
+      "CC_Base_R_RingToe1_025_1": "RightToe",
+      "CC_Base_R_RibsTwist_075_2": "chest",
+      "CC_Base_R_PinkyToe1_00_0": "RightToe",
+      "CC_Base_L_Clavicle_049": "LeftShoulder",
+      "CC_Base_R_Breast_076": "chest",
+      "CC_Base_Hip_02": "hips",
+      "CC_Base_Spine01_034_0": "spine1",
+      "CC_Base_L_Breast_074_0": "chest",
+      "CC_Base_L_ToeBaseShareBone_07": "LeftToe",
+      "CC_Base_L_PinkyToe1_09_0": "LeftToe",
+      "CC_Base_R_Index3_095": "RightHand",
+      "CC_Base_R_KneeShareBone_021": "RightLeg",
+      "CC_Base_R_ThighTwist02_032_1": "RightUpLeg",
+      "CC_Base_L_RingToe1_010_1": "LeftToe",
+      "CC_Base_L_UpperarmTwist02_072": "LeftArm",
+      "CC_Base_L_BigToe1_013_0": "LeftToe",
+      "CC_Base_R_RingToe1_025_0": "RightToe",
+      "CC_Base_L_RibsTwist_073_2": "chest",
+      "CC_Base_Head_038": "head",
+      "CC_Base_L_ThighTwist01_017": "LeftUpLeg",
+      "CC_Base_L_CalfTwist01_014": "LeftLeg",
+      "CC_Base_Spine02_035": "chest",
+      "CC_Base_L_ForearmTwist02_053": "LeftForeArm",
+      "CC_Base_R_ThighTwist02_032_0": "RightUpLeg",
+      "CC_Base_Tongue01_041": "head",
+      "CC_Base_L_Clavicle_049_2": "LeftShoulder",
+      "CC_Base_L_MidToe1_011": "LeftToe",
+      "CC_Base_Pelvis_03_0": "hips",
+      "CC_Base_L_Calf_05": "LeftLeg",
+      "CC_Base_L_Mid3_064": "LeftHand",
+      "CC_Base_JawRoot_040": "head",
+      "CC_Base_R_Clavicle_077_2": "RightShoulder",
+      "CC_Base_R_RingToe1_025": "RightToe",
+      "CC_Base_R_Thumb1_090": "RightHand",
+      "CC_Base_Teeth02_044": "head",
+      "CC_Base_R_Calf_020": "RightLeg",
+      "CC_Base_L_Clavicle_049_0": "LeftShoulder",
+      "CC_Base_L_UpperarmTwist01_071": "LeftArm",
+      "CC_Base_NeckTwist01_036_1": "neck",
+      "CC_Base_R_ThighTwist01_031": "RightUpLeg",
+      "CC_Base_R_CalfTwist02_030_0": "RightLeg",
+      "CC_Base_L_Thumb1_068": "LeftHand",
+      "CC_Base_L_Thumb3_070": "LeftHand",
+      "CC_Base_L_UpperarmTwist02_072_0": "LeftArm",
+      "CC_Base_R_RibsTwist_075": "chest",
+      "CC_Base_Spine02_035_2": "chest",
+      "CC_Base_Spine02_035_1": "chest",
+      "CC_Base_R_ForearmTwist02_082": "RightForeArm",
+      "CC_Base_R_Mid2_088": "RightHand",
+      "CC_Base_R_Pinky2_097": "RightHand",
+      "CC_Base_R_UpperarmTwist01_099_0": "RightArm",
+      "CC_Base_L_PinkyToe1_09_1": "LeftToe",
+      "CC_Base_L_ThighTwist02_018_0": "LeftUpLeg",
+      "CC_Base_L_Clavicle_049_3": "LeftShoulder",
+      "CC_Base_L_Pinky1_056": "LeftHand",
+      "CC_Base_L_ToeBase_08": "LeftToe",
+      "CC_Base_L_Ring2_060": "LeftHand",
+      "CC_Base_L_Ring3_061": "LeftHand",
+      "CC_Base_L_IndexToe1_012_1": "LeftToe",
+      "CC_Base_L_ThighTwist02_018": "LeftUpLeg",
+      "CC_Base_R_MidToe1_027": "RightToe",
+      "CC_Base_R_Breast_076_0": "chest",
+      "CC_Base_R_IndexToe1_026_1": "RightToe",
+      "CC_Base_R_CalfTwist01_029": "RightLeg",
+      "CC_Base_R_PinkyToe1_00": "RightToe",
+      "CC_Base_R_IndexToe1_026": "RightToe",
+      "CC_Base_L_Mid2_063": "LeftHand",
+      "CC_Base_R_ForearmTwist01_081": "RightForeArm",
+      "CC_Base_R_BigToe1_024": "RightToe",
+      "CC_Base_L_RingToe1_010": "LeftToe",
+      "CC_Base_R_ThighTwist02_032": "RightUpLeg",
+      "CC_Base_R_Thigh_019": "RightUpLeg",
+      "CC_Base_L_BigToe1_013_1": "LeftToe",
+      "CC_Base_Head_038_0": "head",
+      "CC_Base_Spine02_035_0": "chest",
+      "CC_Base_R_Ring2_085": "RightHand",
+      "CC_Base_R_BigToe1_024_0": "RightToe",
+      "CC_Base_NeckTwist01_036": "neck",
+      "CC_Base_L_Thigh_04": "LeftUpLeg",
+      "CC_Base_L_ElbowShareBone_054": "LeftForeArm",
+      "CC_Base_L_Ring1_059": "LeftHand",
+      "CC_Base_R_RibsTwist_075_1": "chest",
+      "CC_Base_L_ThighTwist01_017_0": "LeftUpLeg",
+      "CC_Base_L_MidToe1_011_0": "LeftToe",
+      "CC_Base_R_ToeBaseShareBone_028": "RightToe",
+      "CC_Base_L_Breast_074": "chest",
+      "CC_Base_L_Upperarm_050": "LeftArm",
+      "CC_Base_R_IndexToe1_026_0": "RightToe",
+      "CC_Base_R_CalfTwist01_029_0": "RightLeg",
+      "CC_Base_R_ElbowShareBone_080": "RightForeArm",
+      "CC_Base_R_Thumb2_091": "RightHand",
+      "CC_Base_L_Clavicle_049_1": "LeftShoulder",
+      "CC_Base_L_ForearmTwist01_052": "LeftForeArm",
+      "CC_Base_L_Breast_074_1": "chest",
+      "CC_Base_BoneRoot_01": "hips",
+      "CC_Base_Waist_033_0": "spine"
+    },
+    "metrics": [
+      {
+        "frame": 1,
+        "ground_correction": 0.04038643836975098,
+        "height": 1.7548930644989014
+      },
+      {
+        "frame": 2,
+        "ground_correction": 0.033260464668273926,
+        "height": 1.753430724143982
+      },
+      {
+        "frame": 3,
+        "ground_correction": 0.02847440540790558,
+        "height": 1.7467000037431717
+      },
+      {
+        "frame": 4,
+        "ground_correction": 0.026501916348934174,
+        "height": 1.7347388491034508
+      },
+      {
+        "frame": 5,
+        "ground_correction": 0.025875825434923172,
+        "height": 1.7183437533676624
+      },
+      {
+        "frame": 6,
+        "ground_correction": 0.023829996585845947,
+        "height": 1.6989240050315857
+      },
+      {
+        "frame": 7,
+        "ground_correction": 0.020641975104808807,
+        "height": 1.6810337826609612
+      },
+      {
+        "frame": 8,
+        "ground_correction": 0.016925841569900513,
+        "height": 1.6664530336856842
+      },
+      {
+        "frame": 9,
+        "ground_correction": 0.013101700693368912,
+        "height": 1.6574367322027683
+      },
+      {
+        "frame": 10,
+        "ground_correction": 0.051859401166439056,
+        "height": 1.694797657430172
+      },
+      {
+        "frame": 11,
+        "ground_correction": 0.05702102929353714,
+        "height": 1.698761709034443
+      },
+      {
+        "frame": 12,
+        "ground_correction": 0.05653081834316254,
+        "height": 1.7020739167928696
+      },
+      {
+        "frame": 13,
+        "ground_correction": 0.053316161036491394,
+        "height": 1.7067161053419113
+      },
+      {
+        "frame": 14,
+        "ground_correction": 0.0488877147436142,
+        "height": 1.7158316224813461
+      },
+      {
+        "frame": 15,
+        "ground_correction": 0.04381997138261795,
+        "height": 1.7261182740330696
+      },
+      {
+        "frame": 16,
+        "ground_correction": 0.03823702782392502,
+        "height": 1.7331210896372795
+      },
+      {
+        "frame": 17,
+        "ground_correction": 0.032258883118629456,
+        "height": 1.7371126562356949
+      },
+      {
+        "frame": 18,
+        "ground_correction": 0.027092620730400085,
+        "height": 1.736148402094841
+      },
+      {
+        "frame": 19,
+        "ground_correction": 0.022974595427513123,
+        "height": 1.7296241372823715
+      },
+      {
+        "frame": 20,
+        "ground_correction": 0.019345752894878387,
+        "height": 1.718528501689434
+      },
+      {
+        "frame": 21,
+        "ground_correction": 0.015869811177253723,
+        "height": 1.7015080004930496
+      },
+      {
+        "frame": 22,
+        "ground_correction": 0.012125123292207718,
+        "height": 1.6829099543392658
+      },
+      {
+        "frame": 23,
+        "ground_correction": 0.007631417363882065,
+        "height": 1.663307186216116
+      },
+      {
+        "frame": 24,
+        "ground_correction": 0.011532178148627281,
+        "height": 1.6568004991859198
+      },
+      {
+        "frame": 25,
+        "ground_correction": 0.03836448863148689,
+        "height": 1.6776574440300465
+      },
+      {
+        "frame": 26,
+        "ground_correction": 0.05928715318441391,
+        "height": 1.6969477757811546
+      },
+      {
+        "frame": 27,
+        "ground_correction": 0.06469868123531342,
+        "height": 1.708723172545433
+      },
+      {
+        "frame": 28,
+        "ground_correction": 0.06123509258031845,
+        "height": 1.7159868702292442
+      },
+      {
+        "frame": 29,
+        "ground_correction": 0.056182071566581726,
+        "height": 1.7255987375974655
+      },
+      {
+        "frame": 30,
+        "ground_correction": 0.05057172477245331,
+        "height": 1.737038180232048
+      },
+      {
+        "frame": 31,
+        "ground_correction": 0.04522864520549774,
+        "height": 1.7475525587797165
+      },
+      {
+        "frame": 32,
+        "ground_correction": 0.04038643836975098,
+        "height": 1.7548930644989014
+      }
+    ]
+  },
+  {
+    "model": "free_cartoon_game_man_character_rigged",
+    "bones": 96,
+    "clip": "Walk",
+    "frames": 32,
+    "duration_seconds": 1.0333333333333334,
+    "height_m": 1.8,
+    "owners": {
+      "CC_Base_Head_038": "head",
+      "CC_Base_L_Mid1_062": "LeftHand",
+      "CC_Base_L_ThighTwist01_017": "LeftUpLeg",
+      "CC_Base_L_CalfTwist01_014": "LeftLeg",
+      "CC_Base_R_UpperarmTwist01_099": "RightArm",
+      "CC_Base_Spine02_035": "chest",
+      "CC_Base_L_ForearmTwist02_053": "LeftForeArm",
+      "CC_Base_Tongue01_041": "head",
+      "CC_Base_L_KneeShareBone_016": "LeftLeg",
+      "CC_Base_L_MidToe1_011": "LeftToe",
+      "CC_Base_L_Eye_046": "head",
+      "CC_Base_L_Index2_066": "LeftHand",
+      "CC_Base_L_PinkyToe1_09": "LeftToe",
+      "CC_Base_R_Eye_045": "head",
+      "CC_Base_L_Mid3_064": "LeftHand",
+      "CC_Base_L_Calf_05": "LeftLeg",
+      "CC_Base_L_Hand_055": "LeftHand",
+      "CC_Base_JawRoot_040": "head",
+      "CC_Base_R_Index2_094": "RightHand",
+      "CC_Base_R_RingToe1_025": "RightToe",
+      "CC_Base_Waist_033": "spine",
+      "CC_Base_R_Foot_022": "RightFoot",
+      "CC_Base_R_Thumb1_090": "RightHand",
+      "CC_Base_Spine01_034": "spine1",
+      "CC_Base_Teeth02_044": "head",
+      "CC_Base_R_Pinky1_096": "RightHand",
+      "CC_Base_R_Calf_020": "RightLeg",
+      "CC_Base_L_UpperarmTwist01_071": "LeftArm",
+      "CC_Base_R_ThighTwist01_031": "RightUpLeg",
+      "CC_Base_L_Thumb1_068": "LeftHand",
+      "CC_Base_R_Index1_093": "RightHand",
+      "CC_Base_NeckTwist02_037": "neck",
+      "CC_Base_R_Hand_083": "RightHand",
+      "CC_Base_Teeth01_048": "head",
+      "CC_Base_L_Thumb3_070": "LeftHand",
+      "CC_Base_R_RibsTwist_075": "chest",
+      "CC_Base_L_Pinky2_057": "LeftHand",
+      "CC_Base_R_UpperarmTwist02_0100": "RightArm",
+      "CC_Base_L_Foot_06": "LeftFoot",
+      "CC_Base_L_Pinky3_058": "LeftHand",
+      "CC_Base_R_Ring3_086": "RightHand",
+      "CC_Base_R_ForearmTwist02_082": "RightForeArm",
+      "CC_Base_R_Mid2_088": "RightHand",
+      "CC_Base_R_Pinky3_098": "RightHand",
+      "CC_Base_R_Pinky2_097": "RightHand",
+      "CC_Base_Tongue03_043": "head",
+      "CC_Base_L_Thumb2_069": "LeftHand",
+      "CC_Base_L_CalfTwist02_015": "LeftLeg",
+      "CC_Base_L_Pinky1_056": "LeftHand",
+      "CC_Base_R_Mid1_087": "RightHand",
+      "CC_Base_R_Clavicle_077": "RightShoulder",
+      "CC_Base_Tongue02_042": "head",
+      "CC_Base_L_BigToe1_013": "LeftToe",
+      "CC_Base_L_ToeBase_08": "LeftToe",
+      "CC_Base_L_Ring2_060": "LeftHand",
+      "CC_Base_L_Ring3_061": "LeftHand",
+      "CC_Base_R_Forearm_079": "RightForeArm",
+      "CC_Base_L_Index1_065": "LeftHand",
+      "CC_Base_R_ToeBase_023": "RightToe",
+      "CC_Base_R_Upperarm_078": "RightArm",
+      "CC_Base_L_ThighTwist02_018": "LeftUpLeg",
+      "CC_Base_L_RibsTwist_073": "chest",
+      "CC_Base_R_MidToe1_027": "RightToe",
+      "CC_Base_L_Forearm_051": "LeftForeArm",
+      "CC_Base_R_CalfTwist01_029": "RightLeg",
+      "CC_Base_R_PinkyToe1_00": "RightToe",
+      "CC_Base_R_IndexToe1_026": "RightToe",
+      "CC_Base_L_Mid2_063": "LeftHand",
+      "CC_Base_R_ForearmTwist01_081": "RightForeArm",
+      "CC_Base_L_Index3_067": "LeftHand",
+      "CC_Base_R_BigToe1_024": "RightToe",
+      "CC_Base_R_Mid3_089": "RightHand",
+      "CC_Base_R_Thumb3_092": "RightHand",
+      "CC_Base_L_IndexToe1_012": "LeftToe",
+      "CC_Base_R_CalfTwist02_030": "RightLeg",
+      "CC_Base_L_RingToe1_010": "LeftToe",
+      "CC_Base_Pelvis_03": "hips",
+      "CC_Base_R_Ring1_084": "RightHand",
+      "CC_Base_R_ThighTwist02_032": "RightUpLeg",
+      "CC_Base_R_Thigh_019": "RightUpLeg",
+      "CC_Base_L_Clavicle_049": "LeftShoulder",
+      "CC_Base_R_Breast_076": "chest",
+      "CC_Base_R_Ring2_085": "RightHand",
+      "CC_Base_L_Thigh_04": "LeftUpLeg",
+      "CC_Base_NeckTwist01_036": "neck",
+      "CC_Base_L_ElbowShareBone_054": "LeftForeArm",
+      "CC_Base_L_Ring1_059": "LeftHand",
+      "CC_Base_Hip_02": "hips",
+      "CC_Base_L_Breast_074": "chest",
+      "CC_Base_R_Index3_095": "RightHand",
+      "CC_Base_L_Upperarm_050": "LeftArm",
+      "CC_Base_R_KneeShareBone_021": "RightLeg",
+      "CC_Base_R_ElbowShareBone_080": "RightForeArm",
+      "CC_Base_R_Thumb2_091": "RightHand",
+      "CC_Base_L_UpperarmTwist02_072": "LeftArm",
+      "CC_Base_L_ForearmTwist01_052": "LeftForeArm"
+    },
+    "metrics": [
+      {
+        "frame": 1,
+        "ground_correction": 0.08254241198301315,
+        "height": 1.8966528102755547
+      },
+      {
+        "frame": 2,
+        "ground_correction": 0.07455235719680786,
+        "height": 1.8951498866081238
+      },
+      {
+        "frame": 3,
+        "ground_correction": 0.06922432780265808,
+        "height": 1.8880866467952728
+      },
+      {
+        "frame": 4,
+        "ground_correction": 0.0679251030087471,
+        "height": 1.876434214413166
+      },
+      {
+        "frame": 5,
+        "ground_correction": 0.0682821124792099,
+        "height": 1.8602444976568222
+      },
+      {
+        "frame": 6,
+        "ground_correction": 0.06660795956850052,
+        "height": 1.840274102985859
+      },
+      {
+        "frame": 7,
+        "ground_correction": 0.06391097605228424,
+        "height": 1.8220065981149673
+      },
+      {
+        "frame": 8,
+        "ground_correction": 0.06136830896139145,
+        "height": 1.8081285580992699
+      },
+      {
+        "frame": 9,
+        "ground_correction": 0.05413142591714859,
+        "height": 1.7956107035279274
+      },
+      {
+        "frame": 10,
+        "ground_correction": 0.09500106424093246,
+        "height": 1.8349189385771751
+      },
+      {
+        "frame": 11,
+        "ground_correction": 0.09977459162473679,
+        "height": 1.8382414504885674
+      },
+      {
+        "frame": 12,
+        "ground_correction": 0.09957925975322723,
+        "height": 1.8423271626234055
+      },
+      {
+        "frame": 13,
+        "ground_correction": 0.09690340608358383,
+        "height": 1.8484418019652367
+      },
+      {
+        "frame": 14,
+        "ground_correction": 0.0931464359164238,
+        "height": 1.8593662902712822
+      },
+      {
+        "frame": 15,
+        "ground_correction": 0.08861285448074341,
+        "height": 1.8709936738014221
+      },
+      {
+        "frame": 16,
+        "ground_correction": 0.08333024382591248,
+        "height": 1.8786409795284271
+      },
+      {
+        "frame": 17,
+        "ground_correction": 0.07736469805240631,
+        "height": 1.88273324072361
+      },
+      {
+        "frame": 18,
+        "ground_correction": 0.07199349999427795,
+        "height": 1.8813095390796661
+      },
+      {
+        "frame": 19,
+        "ground_correction": 0.06754512339830399,
+        "height": 1.8740016892552376
+      },
+      {
+        "frame": 20,
+        "ground_correction": 0.06370869278907776,
+        "height": 1.8621725142002106
+      },
+      {
+        "frame": 21,
+        "ground_correction": 0.06024348735809326,
+        "height": 1.8443094491958618
+      },
+      {
+        "frame": 22,
+        "ground_correction": 0.055837154388427734,
+        "height": 1.823925256729126
+      },
+      {
+        "frame": 23,
+        "ground_correction": 0.05141671001911163,
+        "height": 1.803146317601204
+      },
+      {
+        "frame": 24,
+        "ground_correction": 0.04871261864900589,
+        "height": 1.7895255163311958
+      },
+      {
+        "frame": 25,
+        "ground_correction": 0.0734395906329155,
+        "height": 1.8082060739398003
+      },
+      {
+        "frame": 26,
+        "ground_correction": 0.09801938384771347,
+        "height": 1.8308975920081139
+      },
+      {
+        "frame": 27,
+        "ground_correction": 0.10523120313882828,
+        "height": 1.8446705713868141
+      },
+      {
+        "frame": 28,
+        "ground_correction": 0.10224324464797974,
+        "height": 1.8529929518699646
+      },
+      {
+        "frame": 29,
+        "ground_correction": 0.0976611003279686,
+        "height": 1.8639130219817162
+      },
+      {
+        "frame": 30,
+        "ground_correction": 0.09243433177471161,
+        "height": 1.876716062426567
+      },
+      {
+        "frame": 31,
+        "ground_correction": 0.08734582364559174,
+        "height": 1.8884084075689316
+      },
+      {
+        "frame": 32,
+        "ground_correction": 0.08254241198301315,
+        "height": 1.8966528102755547
+      }
+    ]
+  }
+]

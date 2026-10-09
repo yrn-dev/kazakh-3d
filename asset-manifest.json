@@ -1,0 +1,119 @@
+{
+  "files": [
+    {
+      "path": "blender/characters/cartoon_asian__boy.blend",
+      "bytes": 7935340,
+      "sha256": "9a26b300f2e8c3cd1e7bc3f7f992e88a574f8e8512ad591111c18c9913465b8b"
+    },
+    {
+      "path": "blender/characters/everyday_jane_casual_modern_woman_rigged.blend",
+      "bytes": 7192127,
+      "sha256": "852cc1cc699d06a11ebb2809eb200d01b681b6ab2c436814f0124577e5dc0925"
+    },
+    {
+      "path": "blender/characters/free_cartoon_game_man_character_rigged.blend",
+      "bytes": 13936336,
+      "sha256": "30cfe651e9c6b7db94f83f7c3e38f978dac79f02529848b91d2be42bf82a40b0"
+    },
+    {
+      "path": "blender/characters/free_stylized_cartoon_girl_rigged_character.blend",
+      "bytes": 9049542,
+      "sha256": "778b80758c10491cdaf8ffa7b234464fa0a3acc9c102b79ba25664fc2a95d30c"
+    },
+    {
+      "path": "blender/characters/teen-boy.blend",
+      "bytes": 4566000,
+      "sha256": "ee79a2ada3f3c00fc2dbfb8ad046e3dbe044e04329f80648ed2dde5004d03b94"
+    },
+    {
+      "path": "blender/characters/walking/cartoon_asian__boy_walk.blend",
+      "bytes": 8185433,
+      "sha256": "71a7dfc595ae241cfaab661d29ec1c2d23269e8f3caf1044863443b2badf25ed"
+    },
+    {
+      "path": "blender/characters/walking/free_cartoon_game_man_character_rigged_walk.blend",
+      "bytes": 14228055,
+      "sha256": "dbade1402b1e2a304cf6159bdf78ff331ca5618db891eab12bf94e80ca147364"
+    },
+    {
+      "path": "blender/characters/walking/free_stylized_cartoon_girl_rigged_character_walk.blend",
+      "bytes": 9617125,
+      "sha256": "b88a67307a40addf48ae138bf57150d879932e206c4a108e7a647c6731184691"
+    },
+    {
+      "path": "blender/characters/walking/teen-boy_walk.blend",
+      "bytes": 4771988,
+      "sha256": "b53912ba1756d0ad1695ae5838a5ea4757a254d1a351cb2ade5330e7fa96cdd9"
+    },
+    {
+      "path": "blender/modern_city_block.blend",
+      "bytes": 20992884,
+      "sha256": "3f3dea057f23dd3094adb41bef389fa6c6dcac6ecb2843f0e8cd2bb1d88dd27e"
+    },
+    {
+      "path": "blender/modern_city_enclosed.blend",
+      "bytes": 23156637,
+      "sha256": "a6b7eb80fbbcfc69f2a5c116354908ce7d15e5b5677f8d267bb267d302f68f90"
+    },
+    {
+      "path": "godot/assets/characters/cartoon_asian__boy_walk.glb",
+      "bytes": 10495252,
+      "sha256": "08e83ef22d0f9c528c289443c420849def6a4bb75eea2332369bfc2c6c1dbe22"
+    },
+    {
+      "path": "godot/assets/characters/everyday_jane_walk.glb",
+      "bytes": 5825840,
+      "sha256": "012471121693934462dcc68ab40d84a7764d262b3d1e11deeb07b32cb186e1f4"
+    },
+    {
+      "path": "godot/assets/characters/free_cartoon_game_man_character_rigged_walk.glb",
+      "bytes": 14340144,
+      "sha256": "27d3693c5992a2f7f4c2da2f4ddea52d1b23968a1c46a9f1d1231b77f3a8e376"
+    },
+    {
+      "path": "godot/assets/characters/free_stylized_cartoon_girl_rigged_character_walk.glb",
+      "bytes": 10051728,
+      "sha256": "2ff3a4a67edb46e26e119ccf53ef7a870d430d751b56d36f7d0cb5f1f5fa53bd"
+    },
+    {
+      "path": "godot/assets/characters/teen-boy_walk.glb",
+      "bytes": 4520892,
+      "sha256": "25baa2cc9eec114054dfc73b5d51620a91e21124334b220781ddec92831cdde1"
+    },
+    {
+      "path": "godot/assets/modern_city_enclosed.glb",
+      "bytes": 35934680,
+      "sha256": "5d1493a80b62c65b52a5066ab9cb999265dee922bc154cdf49d0834accfe8062"
+    },
+    {
+      "path": "source/characters/cartoon_asian__boy.glb",
+      "bytes": 39691332,
+      "sha256": "9df0f4fc1923384464a32e38ec68008ffeb563119c040e05229b753a18dcd422"
+    },
+    {
+      "path": "source/characters/everyday_jane_casual_modern_woman_rigged.glb",
+      "bytes": 5825876,
+      "sha256": "99afdac26d3f4d2f213af040949c94eb85e05061a51c9545a040f06eee30e419"
+    },
+    {
+      "path": "source/characters/free_cartoon_game_man_character_rigged.glb",
+      "bytes": 15088468,
+      "sha256": "bfddfed6f597f6cd406316fd2a8172226edf24315300494f0c03fe20eb18e2d3"
+    },
+    {
+      "path": "source/characters/free_stylized_cartoon_girl_rigged_character.glb",
+      "bytes": 10541476,
+      "sha256": "1fc8a17688b0e56d63ff4cf4ecb50d3c979bd1dd90c94435e5b0191fba5f4a5a"
+    },
+    {
+      "path": "source/characters/teen-boy.glb",
+      "bytes": 4684032,
+      "sha256": "345466b845b47be3b732dad7e32a6f3ff3f9ef6ed630c9d12e382af78365b943"
+    },
+    {
+      "path": "source/modern_city_block.glb",
+      "bytes": 25320800,
+      "sha256": "28694dd37f81873745ad6c1a23a9e00cd777033b85ed862c2cde89e2728bbcf5"
+    }
+  ]
+}
