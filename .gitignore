@@ -37,6 +37,7 @@
 !/scripts/build_pedestrian_routes.py
 !/scripts/verify_assets.py
 !/scripts/requirements.txt
+!/scripts/generate_audio.py
 /previews/*
 !/previews/npcs_city_street.png
 !/previews/npcs_jane_sidewalk.png
