@@ -57,9 +57,10 @@ func _ready() -> void:
    body.add_child(shape)
    root.add_child(body)
    var start := 5.0+float(j)*8.0 if route_id==0 else float(j)*float(route.length)/3.0
-   var pace := 0.83+float(route_id%4)*0.045
+   var pace := randf_range(1.0,1.4) if model_id==1 else randf_range(0.95,1.35)
    var walker := {'node':root,'animation':ap,'route':route_id,'distance':start,'speed':pace,
-    'stride':0.63 if model_id==1 else 0.95,'travelled':0.0,'model':model_id}
+    'stride':0.63 if model_id==1 else 0.95,'travelled':0.0,'model':model_id,
+    'pause_left':0.0,'next_pause':randf_range(12.0,30.0),'look_yaw':0.0}
    var at := sample_route(route,start)
    root.position=at.position
    root.rotation.y=atan2(at.direction.x,at.direction.z)
@@ -89,6 +90,13 @@ func _physics_process(delta: float) -> void:
  for walker in walkers:
   var node: Node3D=walker.node
   var route: Dictionary=routes[walker.route]
+  var animation: AnimationPlayer=walker.animation
+  # Остановка-оглядка: стоит, медленно поворачивает голову, потом идёт дальше.
+  if walker.pause_left>0.0:
+   walker.pause_left-=delta
+   animation.speed_scale=0.0
+   node.rotation.y=lerp_angle(node.rotation.y,walker.look_yaw,1.0-exp(-1.5*delta))
+   continue
   var next := sample_route(route,walker.distance+walker.speed*delta)
   var blocked := false
   for other in walkers:
@@ -103,9 +111,16 @@ func _physics_process(delta: float) -> void:
    if absf(difference.y)<2.2:
     difference.y=0
     if difference.length()<0.85 and difference.dot(next.direction)>0.03:blocked=true
-  var animation: AnimationPlayer=walker.animation
   var nearby := not is_instance_valid(observer) or node.global_position.distance_to(observer.global_position)<115
   if blocked:
+   animation.speed_scale=0.0
+   continue
+  # Планируем следующую остановку (первые секунды все идут — нужны для проверки).
+  walker.next_pause-=delta
+  if walker.next_pause<=0.0:
+   walker.pause_left=randf_range(1.0,4.5)
+   walker.next_pause=randf_range(9.0,30.0)
+   walker.look_yaw=node.rotation.y+randf_range(-1.2,1.2)
    animation.speed_scale=0.0
    continue
   walker.distance=fposmod(walker.distance+walker.speed*delta,float(route.length))

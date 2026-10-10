@@ -2,14 +2,23 @@ extends Node3D
 
 const STREET_START := Vector3(0.0, 1.8, 0.0)
 const MOUSE_SENSITIVITY := 0.002
+const WALK_SPEED := 4.8
+const SPRINT_SPEED := 8.4
+const FLY_SPEED := 6.5
+const GRAVITY := 9.81
+const JUMP_VELOCITY := 4.6
+const MAX_FALL := -32.0
+const EYE_HEIGHT := 1.8
+const GROUND_PROBE_RANGE := 2.5
+
 var camera: Camera3D
 var status: Label
 var pause_hint: Label
 var crosshair: Label
-var speed: float = 9.0
+var speed_scale := 1.0
 var velocity := Vector3.ZERO
-var pitch: float = 0.0
-var yaw: float = 0.095
+var pitch := 0.0
+var yaw := 0.095
 var overview := false
 var elapsed: float = 0.0
 var automated_check := "--smoke" in OS.get_cmdline_user_args() or "--npc-check" in OS.get_cmdline_user_args()
@@ -18,10 +27,19 @@ var collider_count := 0
 var pedestrians: Node3D
 var npc_start := STREET_START
 var npc_yaw := 0.095
+var day_night: DayNight
+var street_lights: StreetLights
+var grounded := false
+var bob_time := 0.0
+var bob_gain := 0.0
+var step_accum := 0.0
+var ambient_player: AudioStreamPlayer
+var step_player: AudioStreamPlayer
+var footsteps: Array[AudioStreamWAV] = []
 
 func _ready() -> void:
 	_register_inputs()
-	_setup_environment()
+	_setup_world()
 	_add_collisions($CityBlock)
 	observer = CharacterBody3D.new()
 	observer.name = "Observer"
@@ -49,6 +67,7 @@ func _ready() -> void:
 	npc_yaw = pedestrians.camera_yaw
 	reset_street()
 	_setup_hud()
+	_setup_audio()
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	print("ALMATY_VIEWER_READY | map loaded | WASD / mouse / Space / Ctrl / Shift")
 	if "--smoke" in OS.get_cmdline_user_args():
@@ -73,6 +92,34 @@ func _add_collisions(node: Node) -> void:
 		body.add_child(shape)
 		collider_count += 1
 
+func _setup_world() -> void:
+	day_night = DayNight.new()
+	day_night.name = "DayNight"
+	add_child(day_night)
+	street_lights = StreetLights.new()
+	street_lights.name = "StreetLights"
+	street_lights.day_night = day_night
+	add_child(street_lights)
+
+func _setup_audio() -> void:
+	ambient_player = AudioStreamPlayer.new()
+	var ambient: AudioStreamWAV = load("res://assets/audio/ambient_city.wav")
+	ambient.loop_mode = AudioStreamWAV.LOOP_FORWARD
+	ambient_player.stream = ambient
+	ambient_player.volume_db = -14.0
+	add_child(ambient_player)
+	ambient_player.play()
+	step_player = AudioStreamPlayer.new()
+	step_player.volume_db = -9.0
+	add_child(step_player)
+	for i in range(3):
+		footsteps.append(load("res://assets/audio/footstep_%d.wav" % (i + 1)) as AudioStreamWAV)
+
+func _play_footstep() -> void:
+	step_player.stream = footsteps[randi() % footsteps.size()]
+	step_player.pitch_scale = randf_range(0.9, 1.12)
+	step_player.play()
+
 func _register_inputs() -> void:
 	var bindings := {"forward": KEY_W, "back": KEY_S, "left": KEY_A, "right": KEY_D,
 		"up": KEY_SPACE, "down": KEY_CTRL, "fast": KEY_SHIFT}
@@ -82,33 +129,6 @@ func _register_inputs() -> void:
 			var event := InputEventKey.new()
 			event.physical_keycode = bindings[action]
 			InputMap.action_add_event(action, event)
-
-func _setup_environment() -> void:
-	var environment := Environment.new()
-	environment.background_mode = Environment.BG_SKY
-	var sky_material := ProceduralSkyMaterial.new()
-	sky_material.sky_top_color = Color("5486ac")
-	sky_material.sky_horizon_color = Color("d1dfdf")
-	sky_material.ground_horizon_color = Color("d1dfdf")
-	sky_material.ground_bottom_color = Color("788479")
-	var sky := Sky.new()
-	sky.sky_material = sky_material
-	environment.sky = sky
-	environment.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
-	environment.ambient_light_color = Color("d4e3ef")
-	environment.ambient_light_energy = 0.4
-	environment.ambient_light_sky_contribution = 0.0
-	environment.tonemap_mode = Environment.TONE_MAPPER_LINEAR
-	var world := WorldEnvironment.new()
-	world.environment = environment
-	add_child(world)
-	var sun := DirectionalLight3D.new()
-	sun.rotation_degrees = Vector3(-48, -32, 0)
-	sun.light_color = Color("fff2dc")
-	sun.light_energy = 0.85
-	sun.shadow_enabled = true
-	sun.directional_shadow_max_distance = 650.0
-	add_child(sun)
 
 func _label(text: String, size: int, color: Color) -> Label:
 	var label := Label.new()
@@ -143,9 +163,9 @@ func _setup_hud() -> void:
 	panel.add_child(stack)
 	stack.add_child(_label("ЖИЛОЙ КВАРТАЛ  /  ОСМОТР", 20, Color("e4f1e9")))
 	stack.add_child(_label("WASD — движение  ·  Мышь — обзор", 16, Color("d2dddd")))
-	stack.add_child(_label("Space / Ctrl — вверх / вниз  ·  Shift — быстрее", 16, Color("d2dddd")))
+	stack.add_child(_label("Space — прыжок/вверх  ·  Ctrl — вниз  ·  Shift — бег", 16, Color("d2dddd")))
 	stack.add_child(_label("Tab — сверху  ·  R — на улицу  ·  Esc — курсор", 16, Color("d2dddd")))
-	stack.add_child(_label("N — к пешеходам  ·  Колесо — скорость  ·  F11 — экран", 16, Color("d2dddd")))
+	stack.add_child(_label("N — к пешеходам  ·  Колесо — темп  ·  F11 — экран", 16, Color("d2dddd")))
 	status = _label("", 15, Color("8dd1c1"))
 	stack.add_child(status)
 	crosshair = _label("·", 32, Color(1,1,1,0.7))
@@ -206,9 +226,9 @@ func _unhandled_input(event: InputEvent) -> void:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			set_captured(true)
 		elif event.button_index == MOUSE_BUTTON_WHEEL_UP:
-			speed = minf(speed * 1.25, 100.0)
+			speed_scale = minf(speed_scale * 1.15, 2.5)
 		elif event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
-			speed = maxf(speed / 1.25, 2.0)
+			speed_scale = maxf(speed_scale / 1.15, 0.5)
 	elif event is InputEventKey and event.pressed and not event.echo:
 		match event.physical_keycode:
 			KEY_ESCAPE: set_captured(Input.mouse_mode != Input.MOUSE_MODE_CAPTURED)
@@ -222,18 +242,55 @@ func _unhandled_input(event: InputEvent) -> void:
 func _physics_process(delta: float) -> void:
 	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		var planar := Input.get_vector("left", "right", "forward", "back")
+		var target_speed: float = SPRINT_SPEED * speed_scale if Input.is_action_pressed("fast") else WALK_SPEED * speed_scale
 		var direction := Basis(Vector3.UP, yaw) * Vector3(planar.x, 0, planar.y)
-		direction.y = Input.get_axis("down", "up")
-		var multiplier: float = 5.0 if Input.is_action_pressed("fast") else 1.0
-		velocity = velocity.lerp(direction.normalized() * speed * multiplier, 1.0 - exp(-12.0 * delta))
+		velocity.x = lerp(velocity.x, direction.x * target_speed, 1.0 - exp(-12.0 * delta))
+		velocity.z = lerp(velocity.z, direction.z * target_speed, 1.0 - exp(-12.0 * delta))
+		if not overview:
+			# «Подошва»: луч вниз от глаз ищет опорную поверхность.
+			var space := get_world_3d().direct_space_state
+			var probe := PhysicsRayQueryParameters3D.create(observer.position + Vector3.UP * 0.1, observer.position + Vector3.DOWN * GROUND_PROBE_RANGE)
+			probe.exclude = [observer.get_rid()]
+			var floor_hit := space.intersect_ray(probe)
+			var eye_target: float = floor_hit.position.y + EYE_HEIGHT if not floor_hit.is_empty() else observer.position.y - 4.0
+			if Input.is_action_just_pressed("up") and grounded:
+				velocity.y = JUMP_VELOCITY
+				grounded = false
+			elif Input.is_action_pressed("up"):
+				velocity.y = lerp(velocity.y, FLY_SPEED * speed_scale, 1.0 - exp(-6.0 * delta))
+				grounded = false
+			elif Input.is_action_pressed("down"):
+				velocity.y = lerp(velocity.y, -FLY_SPEED * speed_scale, 1.0 - exp(-6.0 * delta))
+			elif observer.position.y > eye_target + 0.02:
+				# В полёте: гравитация.
+				velocity.y = maxf(velocity.y - GRAVITY * delta, MAX_FALL)
+				grounded = false
+			else:
+				# На земле: стоим на высоте глаз над поверхностью.
+				velocity.y = 0.0
+				observer.position.y = lerpf(observer.position.y, eye_target, 1.0 - exp(-20.0 * delta))
+				grounded = true
 		observer.velocity = velocity
 		observer.move_and_slide()
 		velocity = observer.velocity
 		observer.position.y = clampf(observer.position.y, -0.5, 1800.0)
+		# Покачивание камеры и шаги — только при ходьбе по земле.
+		var hspeed: float = Vector2(velocity.x, velocity.z).length()
+		if grounded and hspeed > 1.2:
+			bob_gain = move_toward(bob_gain, minf(hspeed / WALK_SPEED, 1.6), 6.0 * delta)
+			bob_time += hspeed * delta * 1.85
+			step_accum += hspeed * delta
+			if step_accum > 0.66:
+				step_accum = 0.0
+				_play_footstep()
+		else:
+			bob_gain = move_toward(bob_gain, 0.0, 8.0 * delta)
+		camera.position = Vector3(sin(bob_time * 2.0) * 0.02 * bob_gain, sin(bob_time) * 0.05 * bob_gain, 0.0)
 	elapsed += delta
 	if elapsed > 0.15:
 		elapsed = 0.0
-		status.text = "Высота %.1f м  ·  Скорость %.0f м/с  ·  Пешеходы: 24" % [camera.global_position.y, speed]
+		status.text = "Высота %.1f м  ·  %.1f м/с  ·  %s  ·  Пешеходы: 24" % [
+			camera.global_position.y, Vector2(velocity.x, velocity.z).length(), day_night.clock_text()]
 
 func _smoke_check() -> void:
 	await get_tree().physics_frame
